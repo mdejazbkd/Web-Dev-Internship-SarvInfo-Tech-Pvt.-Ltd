@@ -1,0 +1,27 @@
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+header {
+  grid-column: span 2;
+  background: #ddd;
+  padding: 10px;
+}
+
+aside {
+  background: #bbb;
+  padding: 10px;
+}
+
+main {
+  padding: 10px;
+}
+
+footer {
+  grid-column: span 2;
+  background: #ddd;
+  padding: 10px;
+}

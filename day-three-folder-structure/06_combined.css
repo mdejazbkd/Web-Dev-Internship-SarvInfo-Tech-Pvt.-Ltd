@@ -1,0 +1,76 @@
+/* Page layout using GRID */
+.page-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  grid-column: span 2;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* Main content */
+.content {
+  padding: 20px;
+}
+
+/* FLEXBOX inside main */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 200px;
+  background-color: lightblue;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  grid-column: span 2;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .header,
+  .footer {
+    grid-column: span 1;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+}

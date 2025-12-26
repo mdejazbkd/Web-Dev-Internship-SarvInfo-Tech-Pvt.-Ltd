@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid blue;
+  padding: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+body{
+    background-color: rgb(203, 217, 229);
+}

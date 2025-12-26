@@ -1,0 +1,9 @@
+.para {
+  color: red;
+  background-color: aqua;
+  border: 2px dashed blue;
+  font-size: 24px;
+}
+body{
+    background-color: bisque;
+}

@@ -1,0 +1,19 @@
+body{
+    background-color: chartreuse;
+}
+
+.para {
+  color: red;
+  font-size: 22px;
+}
+
+.para span {
+  color: blue;
+  font-size: 30px;
+}
+
+#email {
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 8px;
+}

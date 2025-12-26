@@ -1,0 +1,11 @@
+.para {
+  font-size: 20px;
+}
+
+.para span {
+  color: blueviolet;
+  font-size: 32px;
+}
+body{
+    background-color: bisque;
+}

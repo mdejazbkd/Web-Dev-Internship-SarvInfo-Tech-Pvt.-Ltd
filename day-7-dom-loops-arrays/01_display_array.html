@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fruits List</h2>
+<button onclick="showFruits()">Show Fruits</button>
+<ul id="list"></ul>
+
+<script>
+  let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+  function showFruits() {
+    let list = document.getElementById("list");
+    list.innerHTML = "";
+
+    for (let i = 0; i < fruits.length; i++) {
+      list.innerHTML += "<li>" + fruits[i] + "</li>";
+    }
+  }
+</script>
+
+</body>
+</html>

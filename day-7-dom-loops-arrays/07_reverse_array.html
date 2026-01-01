@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="reverseArray()">Reverse</button>
+<p id="output"></p>
+
+<script>
+  let arr = [1, 2, 3, 4, 5];
+
+  function reverseArray() {
+    let reversed = "";
+
+    for (let i = arr.length - 1; i >= 0; i--) {
+      reversed += arr[i] + " ";
+    }
+
+    document.getElementById("output").innerText = reversed;
+  }
+</script>
+
+</body>
+</html>

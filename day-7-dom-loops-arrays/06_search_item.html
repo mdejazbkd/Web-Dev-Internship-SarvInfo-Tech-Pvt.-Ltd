@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="search" placeholder="Search item">
+<button onclick="searchItem()">Search</button>
+<p id="result"></p>
+
+<script>
+  let data = ["HTML", "CSS", "JavaScript", "Python"];
+
+  function searchItem() {
+    let value = document.getElementById("search").value;
+    let found = false;
+
+    for (let i = 0; i < data.length; i++) {
+      if (data[i] === value) {
+        found = true;
+        break;
+      }
+    }
+
+    document.getElementById("result").innerText =
+      found ? "Item Found" : "Item Not Found";
+  }
+</script>
+
+</body>
+</html>

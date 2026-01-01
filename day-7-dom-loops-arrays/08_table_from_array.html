@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showTable()">Show Table</button>
+
+<table border="1">
+  <tbody id="table"></tbody>
+</table>
+
+<script>
+  let students = ["Aman", "Riya", "Neha", "Karan"];
+
+  function showTable() {
+    let table = document.getElementById("table");
+    table.innerHTML = "";
+
+    for (let i = 0; i < students.length; i++) {
+      table.innerHTML +=
+        "<tr><td>" + (i + 1) + "</td><td>" + students[i] + "</td></tr>";
+    }
+  }
+</script>
+
+</body>
+</html>

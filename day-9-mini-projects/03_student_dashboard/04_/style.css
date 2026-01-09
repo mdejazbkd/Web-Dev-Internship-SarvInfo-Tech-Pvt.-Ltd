@@ -1,0 +1,17 @@
+body {
+  font-family: Arial;
+  background-color: rgb(192, 243, 243);
+}
+
+.container {
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #fad2d2;
+  width: 120px;
+  text-align: center;
+}
